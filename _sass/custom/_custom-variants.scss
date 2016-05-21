@@ -1,0 +1,128 @@
+// DIVS
+
+@mixin div-inherit {
+    background-color:inherit;
+
+    color:inherit;
+
+    p, ul, li, {
+        color:inherit;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        color:inherit;
+    }
+}
+
+@mixin div-variant($bg,$h,$p)
+{
+    background-color:$bg;
+
+    color:$p;
+
+    p, ul, li, {
+        color:$p;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        color:$h;
+    }
+
+    > div, section, article {
+        @include div-inherit;
+
+        > div, section, article {
+            @include div-inherit;
+
+            > div, section, article {
+                @include div-inherit;
+            }
+        }
+    }
+}
+
+
+// LINKS
+
+@mixin a-inherit {
+    a, .a {
+        color: inherit;
+        text-decoration:inherit;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: inherit;
+            text-decoration:inherit;
+        }
+    }
+}
+
+@mixin a-variant-darken($c,$u)
+{
+    a, .a {
+        color: $c;
+        text-decoration:$u;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($c, 15%);
+            text-decoration:$u;
+        }
+    }
+
+    > div, > section, > article {
+        @include a-inherit;
+
+        > div, > section, > article {
+            @include a-inherit;
+
+            > div, > section, > article {
+                @include a-inherit;
+            }
+        }
+    }
+}
+
+@mixin a-variant-lighten($c,$u)
+{
+    a, .a {
+        color: $c;
+        text-decoration:$u;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: lighten($c, 15%);
+            text-decoration:$u;
+        }
+    }
+
+    > div, > section, > article {
+        @include a-inherit;
+
+        > div, > section, > article {
+            @include a-inherit;
+
+            > div, > section, > article {
+                @include a-inherit;
+            }
+        }
+    }
+}
+
+
+
+
+// BORDER
+
+@mixin border-variant($top,$right,$bottom,$left,$width,$color)
+{
+    border-top:$top $width $color;
+    border-right:$right $width $color;
+    border-bottom:$bottom $width $color;
+    border-left:$left $width $color;
+}

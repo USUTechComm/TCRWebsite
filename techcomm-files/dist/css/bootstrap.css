@@ -7179,6 +7179,11 @@ button.close {
     display: none !important;
   }
 }
+
+
+
+
+
 .container-variable {
   margin-right: auto;
   margin-left: auto;
@@ -7238,6 +7243,11 @@ button.close {
     padding-bottom: 40px;
   }
 }
+
+
+
+
+
 article {
   background-color: #fff;
   padding-bottom: 20px;
@@ -7247,6 +7257,11 @@ article {
   background-size: 100% auto;
   background-position: 0 20px;
 }
+
+
+
+
+
 footer {
   padding-bottom: 30px;
   background-color: #ffffff;
@@ -7281,6 +7296,11 @@ footer > div:first-child {
 footer > div > ul {
   margin: 0;
 }
+
+
+
+
+
 .border-top {
   border-top: solid 1px #f0f2f3;
   border-right: none 1px #f0f2f3;
@@ -7323,6 +7343,11 @@ footer > div > ul {
   border-bottom: none 1px #f0f2f3;
   border-left: solid 1px #f0f2f3;
 }
+
+
+
+
+
 .side-menu h2 {
   font-family: inherit;
   font-weight: 500;
@@ -7398,6 +7423,11 @@ footer > div > ul {
 .side-menu ul li > ul > li > a {
   color: #56626a;
 }
+
+
+
+
+
 .section-faculty,
 .section-students {
   padding-bottom: 20px;
@@ -7415,6 +7445,11 @@ footer > div > ul {
   width: 100%;
   margin-top: 20px;
 }
+
+
+
+
+
 .tc-carousel-wrapper {
   overflow: hidden;
 }
@@ -7634,6 +7669,16 @@ footer > div > ul {
     text-shadow: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
 #global-header img {
   height: 12px;
   margin: 8px 0 6px 0;
@@ -7695,6 +7740,16 @@ footer > div > ul {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
+
+
+
+
+
+
+
+
+
+
 /* Slider */
 .slick-slider {
   position: relative;
