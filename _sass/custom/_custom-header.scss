@@ -1,0 +1,46 @@
+.navbar-techCom {
+    .navbar-brand {
+        padding: 0;
+        margin: 15px 15px 0 0;
+        > img {
+            height: 40px;
+            @media (min-width: $screen-md-min) {
+                height: 50px;
+            }
+        }
+    }
+    .navbar-header {
+        @media (min-width: $screen-md-min) {
+            margin-right: 40px;
+        }
+    }
+    .dropdown-toggle {
+        font-size: 14px;
+        padding: 24px;
+        @media (min-width: $screen-md-min) {
+            padding: 30px;
+        }
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: transparent;
+        }
+    }
+    .dropdown-menu {
+        background-color: $gray-lighter;
+        border: none;
+        border-radius: 0;
+        > li > a {
+            color: $usu-blue;
+            background-color: $gray-lighter;
+            padding: 8px 20px;
+            &:hover {
+                color: $gray-lighter;
+                background-color: $usu-blue;
+            }
+        }
+    }
+    .icon-bar {
+        background-color: $usu-blue;
+    }
+}

@@ -1,7 +1,7 @@
 // CONTAINER-VARIABLE
 
 .container-variable {
-  
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -68,127 +68,127 @@
 // DROPDOWN
 
 .tc-dropdown {
-    min-height:0;
-    height:0;
-    overflow:hidden;
-    padding:0;
-    color:$usu-blue;
+  min-height:0;
+  height:0;
+  overflow:hidden;
+  padding:0;
+  color:$usu-blue;
 
-    &.show {
-        height:auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+  &.show {
+    height:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .tc-dropdown-heading {
+    display:block;
+    font-size: $font-size-h2;
+    color:$gray-darker;
+    text-align:center;
+
+    &:hover {
+      color:$usu-blue;
+      text-decoration:none;
     }
+  }
 
-    .tc-dropdown-heading {
-        display:block;
-        font-size: $font-size-h2;
-        color:$gray-darker;
-        text-align:center;
+  > ul {
+    margin-top:25px;
 
-        &:hover {
-            color:$usu-blue;
-            text-decoration:none;
-        }
+    > li > a {
+      padding-top:15px;
+      padding-bottom:15px;
+      color:$usu-blue;
+      font-weight:bold;
+
+      &:hover {
+        background-color:$usu-blue;
+        color:$gray-lighter;
+      }
     }
-
-    > ul {
-        margin-top:25px;
-
-        > li > a {
-            padding-top:15px;
-            padding-bottom:15px;
-            color:$usu-blue;
-            font-weight:bold;
-
-            &:hover {
-                background-color:$usu-blue;
-                color:$gray-lighter;
-            }
-        }
-    }
+  }
 }
 
 // MAIN
 
 main {
-    padding-bottom:20px;
+  background-color: #f0f2f3;
 }
 
 // FOOTER
 
 footer {
-    padding-bottom:30px;
+  padding-bottom:30px;
 
-    background-color: #fff;
-    color:$gray-darker;
+  background-color: #fff;
+  color:$gray-darker;
 
-    > div {
-        padding-top:15px;
-        padding-bottom:15px;
+  > div {
+    padding-top:15px;
+    padding-bottom:15px;
 
-        .list-inline {
-            cursor:default;
+    .list-inline {
+      cursor:default;
 
-            > li {
-                padding:0;
+      > li {
+        padding:0;
 
-                > a {
-                    padding:5px;
-                }
-            }
+        > a {
+          padding:5px;
         }
-
-        > ul > li > a {
-            color: $usu-blue-light;
-
-            &:hover,
-            &:focus {
-                color: $usu-copper;
-                background-color: transparent;
-                text-decoration:none;
-            }
-        }
-
-        &:first-child {
-            padding-top:45px;
-            border-top:solid 1px $gray-lighter;
-        }
-
-        > ul {
-            margin:0;
-        }
+      }
     }
+
+    > ul > li > a {
+      color: $usu-blue-light;
+
+      &:hover,
+      &:focus {
+        color: $usu-copper;
+        background-color: transparent;
+        text-decoration:none;
+      }
+    }
+
+    &:first-child {
+      padding-top:45px;
+      border-top:solid 1px $gray-lighter;
+    }
+
+    > ul {
+      margin:0;
+    }
+  }
 }
 
 // BORDERS
 
 .border-top {
-    @include border-variant(solid,none,none,none,1px,$gray-light);
+  @include border-variant(solid,none,none,none,1px,$gray-light);
 }
 .border-right {
-    @include border-variant(none,solid,none,none,1px,$gray-light);
+  @include border-variant(none,solid,none,none,1px,$gray-light);
 }
 .border-bottom {
-    @include border-variant(none,none,solid,none,1px,$gray-light);
+  @include border-variant(none,none,solid,none,1px,$gray-light);
 }
 .border-left {
-    @include border-variant(none,none,none,solid,1px,$gray-light);
+  @include border-variant(none,none,none,solid,1px,$gray-light);
 }
 
 
 .border-all {
-    @include border-variant(solid,solid,solid,solid,1px,$gray-light);
+  @include border-variant(solid,solid,solid,solid,1px,$gray-light);
 }
 
 
 .border-top-bottom {
-    @include border-variant(solid,none,solid,none,1px,$gray-light);
+  @include border-variant(solid,none,solid,none,1px,$gray-light);
 }
 
 
 .border-right-left {
-    @include border-variant(none,solid,none,solid,1px,$gray-light);
+  @include border-variant(none,solid,none,solid,1px,$gray-light);
 }
 
 
@@ -197,40 +197,40 @@ footer {
 
 .side-menu {
 
-    @include border-variant(none,solid,none,none,1px,$gray-light);
-    font-size:13px;
-    line-height:$line-height-base;
-    padding-right:0;
+  @include border-variant(none,solid,none,none,1px,$gray-light);
+  font-size:13px;
+  line-height:$line-height-base;
+  padding-right:0;
 
-    >
+  >
 
-    ul {
-        list-style-type: none;
-        margin-left:5px;
+  ul {
+    list-style-type: none;
+    margin-left:5px;
 
-        li {
-            margin: 7px 0px;
+    li {
+      margin: 7px 0px;
 
-            &.active > a {
-                font-size:14px;
-                font-weight:bold;
-                color:$gray-darker;
-                cursor:default;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
-    .side-menu-title a {
-        display:inline-block;
-        font-size:15px;
+      &.active > a {
+        font-size:14px;
         font-weight:bold;
-        line-height:$line-height-computed;
-        color:$gray-darkest;
+        color:$gray-darker;
+        cursor:default;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
+  }
+
+  .side-menu-title a {
+    display:inline-block;
+    font-size:15px;
+    font-weight:bold;
+    line-height:$line-height-computed;
+    color:$gray-darkest;
+  }
 
 
 }
@@ -327,16 +327,6 @@ footer {
 }
 
 
-// MAIN
-
-@media (min-width: 768px) {
-  main {
-    background-color: #f0f2f3;
-    padding-bottom: 40px;
-  }
-}
-
-
 // ARTICLE
 
 article {
@@ -347,4 +337,75 @@ article {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 20px;
+}
+
+// HOME PAGE CAROUSEL
+
+.tc-carousel {
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  div {
+    display: inline-block;
+    width: 100%;
+    img {
+      position: relative;
+      display: inline-block;
+    }
+    .tc-carousel-caption {
+      display: inline-block;
+      position: absolute;
+      text-align: left;
+      left: 32px;
+      bottom: 20px;
+      width: 80%;
+      @media (min-width: $screen-sm-min) {
+        bottom: 40px;
+      }
+      @media (min-width: $screen-md-min) {
+        top: 360px;
+        width: 40%;
+      }
+      @media (min-width: $screen-lg-min) {
+        top: 400px;
+      }
+      color: #fff;
+      text-shadow: 2px 2px 5px #333;
+      .btn {
+        text-shadow: none;
+      }
+      @media (max-width: $screen-sm-max) {
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+// BUTTONS
+
+.btn-blue {
+  @include button-variant(#fff, $usu-blue, $usu-blue);
+}
+
+.btn-gray {
+  @include button-variant($usu-blue, $gray-lighter, $gray-lighter);
+}
+
+.btn-responsive {
+  @media (max-width: $screen-xs-max) {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
 }
