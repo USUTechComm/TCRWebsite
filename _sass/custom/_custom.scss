@@ -113,6 +113,7 @@
 
 main {
   background-color: #f0f2f3;
+  padding-bottom: 60px;
 }
 
 // FOOTER
@@ -236,12 +237,26 @@ footer {
 }
 
 
+// PAGE SECTIONS
+
+section {
+  h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: solid 1px $gray-lighter;
+    font-size: 34px;
+  }
+}
+
+
 // FACULTY AND STUDENT SECTIONS
 
 .section-faculty, .section-students {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: solid 1px #f0f2f3;
+  margin-bottom: 60px;
+  h2 {
+    margin-top: 24px;
+  }
 }
 
 .section-faculty:last-child, .section-students:last-child {
@@ -370,10 +385,12 @@ article {
       @media (min-width: $screen-lg-min) {
         top: 400px;
       }
-      color: #fff;
       text-shadow: 2px 2px 5px #333;
       .btn {
         text-shadow: none;
+      }
+      h2, p {
+        color: #fff !important;
       }
       @media (max-width: $screen-sm-max) {
         h2 {

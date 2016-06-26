@@ -7,7 +7,31 @@
 
     {% include header.html %}
 
-    {{ content }}
+    <main>
+
+      <div class="container">
+
+        <div class="row">
+
+          <article class="col-xs-12 col-sm-9" style="margin-top:24px;">
+
+            <div class="col-xs-12">
+
+              <div class="page-header">
+                <h1><small>{{ page.section }}</small><br>{{ page.title }}</h1>
+              </div>
+
+            </div>
+
+            {{ content }}
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </main>
 
     {% include footer.html %}
 

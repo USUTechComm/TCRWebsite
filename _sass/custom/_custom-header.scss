@@ -9,6 +9,19 @@
             }
         }
     }
+    .navbar-nav {
+        > li > a {
+            color: $usu-blue;
+
+            &:hover {
+                color: $usu-blue-light;
+                background-color: transparent;
+            }
+            &:focus {
+                background-color: $gray-lighter;
+            }
+        }
+    }
     .navbar-header {
         @media (min-width: $screen-md-min) {
             margin-right: 40px;

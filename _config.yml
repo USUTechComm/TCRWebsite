@@ -25,3 +25,6 @@ markdown: kramdown
 
 # External links
 englishdept: http://english.usu.edu
+
+# Section variables
+bachelors-section: "BA/BS in English: Professional and Technical Writing Emphasis"
