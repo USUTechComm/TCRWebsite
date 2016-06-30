@@ -18,13 +18,51 @@ keywords: >
   arts, science, bachelor, undergraduate, technical communication
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://derbilmcdillet.github.io" # the base hostname & protocol for your site
+url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
-# External links
-englishdept: http://english.usu.edu
+collections:
+- sections
 
-# Section variables
-bachelors-section: "BA/BS in English: Professional and Technical Writing Emphasis"
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "bachelors"
+    values:
+      section: "BA/BS in English: Professional and Technical Writing Emphasis"
+      short: "Bachelor's Degree"
+      menu: "Bachelor's"
+  -
+    scope:
+      path: "masters"
+    values:
+      section: "Master of Technical Communication"
+      short: "Master of Tech Comm"
+      menu: "Master's"
+  -
+    scope:
+      path: "doctorate"
+    values:
+      section: "Technical Communication and Rhetoric Doctoral Program"
+      short: "TCR Doctoral Program"
+      menu: "PhD"
+  -
+    scope:
+      path: "people"
+    values:
+      section: "People"
+      short: "People"
+      menu: "People"
+      
+      
+      
+      
+      
+      

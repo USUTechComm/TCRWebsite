@@ -52,18 +52,42 @@
           <div class="collapse navbar-collapse" id="tc-collapse">
 
             <ul class="nav navbar-nav navbar-popover">
-
-              {% for section in site.data.sections %}
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ section.menu }} <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bachelors's <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                  {% for page in section.pages %}
-                    <li><a href="{{ page.url | prepend: site.url }}">{{ page.title }}</a></li>
-                  {% endfor %}
+                    <li><a href="{{ "/bachelors/" | prepend: site.url }}">About the Program</a></li>
+                    <li><a href="{{ "/bachelors/requirements" | prepend: site.url }}">Degree Requirements</a></li>
+                    <li><a href="{{ "/bachelors/courses" | prepend: site.url }}">Topics Courses</a></li>
                   </ul>
                 </li>
-              {% endfor %}
-
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Master's <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ "/masters/" | prepend: site.url }}">About the Program</a></li>
+                    <li><a href="{{ "/masters/application" | prepend: site.url }}">Application Procedure</a></li>
+                    <li><a href="{{ "/masters/courses" | prepend: site.url }}">Courses</a></li>
+                    <li><a href="{{ "/masters/financial" | prepend: site.url }}">Financial Information</a></li>
+                    <li><a href="{{ "/masters/faq" | prepend: site.url }}">Frequently Asked Questions</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Doctorate <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ "/doctorate/" | prepend: site.url }}">About the Program</a></li>
+                    <li><a href="{{ "/doctorate/application" | prepend: site.url }}">Application Procedure</a></li>
+                    <li><a href="{{ "/doctorate/courses" | prepend: site.url }}">Courses</a></li>
+                    <li><a href="{{ "/doctorate/requirements" | prepend: site.url }}">Degree Requirements</a></li>
+                    <li><a href="{{ "/doctorate/financial" | prepend: site.url }}">Financial Information</a></li>
+                    <li><a href="{{ "/doctorate/timeline" | prepend: site.url }}">Timeline to Graduation</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">People <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ "/people/faculty" | prepend: site.url }}">Faculty</a></li>
+                    <li><a href="{{ "/people/students" | prepend: site.url }}">Students</a></li>
+                  </ul>
+                </li>
             </ul>
 
             <!-- <ul class="nav navbar-nav navbar-right aux-menu">
