@@ -8,10 +8,10 @@
       url: /bachelors/
     - name: requirements
       title: Degree Requirements
-      url: /bachelors/requirements/
+      url: /bachelors/requirements
     - name: courses
       title: Topics Courses
-      url: /bachelors/courses/
+      url: /bachelors/courses
         
 - name: masters
   title: Master of Technical Communication
@@ -23,19 +23,19 @@
       url: /masters/
     - name: application
       title: Application Procedure
-      url: /masters/application/
+      url: /masters/application
     - name: courses
       title: Courses
-      url: /masters/courses/
+      url: /masters/courses
     - name: financial
       title: Financial Information
-      url: /masters/financial/
+      url: /masters/financial
     - name: requirements
       title: Degree Requirements
-      url: /masters/requirements/
+      url: /masters/requirements
     - name: faq
       title: Frequently Asked Questions
-      url: /masters/faq/
+      url: /masters/faq
         
 - name: doctorate
   title: Technical Communication and Rhetoric Doctoral Program
@@ -47,19 +47,19 @@
       url: /doctorate/
     - name: application
       title: Application Procedure
-      url: /doctorate/application/
+      url: /doctorate/application
     - name: courses
       title: Courses
-      url: /doctorate/courses/
+      url: /doctorate/courses
     - name: requirements
       title: Degree Requirements
-      url: /doctorate/requirements/
+      url: /doctorate/requirements
     - name: financial
       title: Financial Information
       url: /doctorate/financial
     - name: timeline
       title: Timeline to Graduation
-      url: /doctorate/timeline/
+      url: /doctorate/timeline
     
 - name: people
   title: People
@@ -68,10 +68,10 @@
   pages:
     - name: faculty
       title: Faculty
-      url: /people/faculty/
+      url: /people/faculty
     - name: students
       title: Students
-      url: /people/students/
+      url: /people/students
         
 
 
