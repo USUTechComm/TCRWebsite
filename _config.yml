@@ -17,7 +17,7 @@ author: >
 keywords: >
   arts, science, bachelor, undergraduate, technical communication
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/usu-tech-comm" # the subpath of your site, e.g. /blog
 url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
 
 # Build settings
