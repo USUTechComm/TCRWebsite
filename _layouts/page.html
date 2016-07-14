@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body data-spy="scroll" data-target="#tc-sidenav">
 
     {% include header.html %}
 
@@ -26,11 +26,13 @@
             {{ content }}
 
           </article>
-          
-          <nav class="col-sm-3 hidden-xs">
-          
-            <p class="h4">{{ page.short }}</p>
-          
+
+          <nav class="col-sm-3 hidden-xs tc-sidenav" id="tc-sidenav" data-spy="affix" data-offset-top="109">
+
+            <h2 class="h4">{{ page.title }}</h2>
+
+            <ul class="nav list-unstyled"></ul>
+
           </nav>
 
         </div>
@@ -40,6 +42,23 @@
     </main>
 
     {% include footer.html %}
+
+    <script type="text/javascript">
+
+      $(function() {
+        var $section = $('section');
+        var $h2 = $('h2');
+        var $sideNav = $('.tc-sidenav ul');
+        $section.each(function() {
+          var content = $(this).children('h2').html();
+          var contentTrimmed = content.replace(/\s/g,'').toLowerCase();
+          $(this).attr('id', contentTrimmed);
+          $sideNav.append('<li><a href="#' + contentTrimmed + '">' + content + '</a></li>');
+        });
+        $sideNav.append('<li class="back-to-top"><a href="#">Back to top</a></li>')
+      });
+
+    </script>
 
   </body>
 

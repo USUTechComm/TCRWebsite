@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 // CONTAINER-VARIABLE
 
 .container-variable {
@@ -424,5 +428,43 @@ article {
   @media (max-width: $screen-xs-max) {
     font-size: 10px;
     padding: 3px 6px;
+  }
+}
+
+.tc-sidenav {
+  margin-top: 24px;
+  ul {
+    li {
+      > a {
+        color: $usu-blue-light;
+        padding: 8px;
+        display: inline-block;
+      }
+      &.back-to-top {
+        font-size: 12px;
+        > a {
+          color: $usu-copper;
+        }
+      }
+      &.active {
+        > a {
+          background-color: $usu-blue;
+          color: #fff;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &.affix, &.affix-top {
+    right: 15px;
+  }
+  &.affix-top {
+    position: absolute;
+    top: 109px;
+  }
+  &.affix {
+    top: 0;
   }
 }
