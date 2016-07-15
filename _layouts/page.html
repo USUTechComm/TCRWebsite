@@ -53,7 +53,7 @@
         var $sideNav = $('.tc-sidenav ul');
         $section.each(function() {
           var content = $(this).children('h2').html();
-          var contentTrimmed = content.replace(/\s/g,'').toLowerCase();
+          var contentTrimmed = content.replace(/[\s?.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase();
           $(this).attr('id', contentTrimmed);
           $sideNav.append('<li><a href="#' + contentTrimmed + '">' + content + '</a></li>');
         });

@@ -437,9 +437,9 @@ article {
     li {
       margin-top: 12px;
       border-left: solid 2px transparent;
-        &:hover, &:focus {
-          border-color: $usu-blue-light;
-        }
+      &:hover, &:focus {
+        border-color: $usu-blue-light;
+      }
       > a {
         color: $gray-dark;
         padding: 4px 16px;
@@ -475,5 +475,14 @@ article {
   }
   &.affix {
     top: 0;
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm/4;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md/4;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-lg/4;
+    }
   }
 }
