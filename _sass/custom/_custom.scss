@@ -432,37 +432,46 @@ article {
 }
 
 .tc-sidenav {
-  margin-top: 24px;
-  ul {
+  margin-top: 32px;
+  .nav {
     li {
+      margin-top: 12px;
+      border-left: solid 2px transparent;
+        &:hover, &:focus {
+          border-color: $usu-blue-light;
+        }
       > a {
-        color: $usu-blue-light;
-        padding: 8px;
+        color: $gray-dark;
+        padding: 4px 16px;
         display: inline-block;
+        &:hover, &:focus {
+          color: $usu-blue-light;
+          background-color: transparent;
+        }
       }
       &.back-to-top {
         font-size: 12px;
         > a {
           color: $usu-copper;
+          &:hover, &:focus {
+            color: darken($usu-copper, 20%);
+          }
+        }
+        &:hover, &:focus {
+          border-color: transparent;
         }
       }
       &.active {
+        border-color: $usu-blue-light;
         > a {
-          background-color: $usu-blue;
-          color: #fff;
+          color: $usu-blue-light;
+          background-color: transparent;
           &:hover {
             text-decoration: none;
           }
         }
       }
     }
-  }
-  &.affix, &.affix-top {
-    right: 15px;
-  }
-  &.affix-top {
-    position: absolute;
-    top: 109px;
   }
   &.affix {
     top: 0;
