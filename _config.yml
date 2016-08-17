@@ -37,29 +37,25 @@ defaults:
       path: "bachelors"
     values:
       section: "BA/BS in English: Professional and Technical Writing Emphasis"
-      short: "Bachelor's Degree"
-      menu: "Bachelor's"
+      short: "bachelors"
   -
     scope:
       path: "masters"
     values:
       section: "Master of Technical Communication"
-      short: "Master of Tech Comm"
-      menu: "Master's"
+      short: "masters"
   -
     scope:
-      path: "doctorate"
+      path: "phd"
     values:
       section: "Technical Communication and Rhetoric Doctoral Program"
-      short: "TCR Doctoral Program"
-      menu: "PhD"
+      short: "phd"
   -
     scope:
       path: "people"
     values:
       section: "People"
-      short: "People"
-      menu: "People"
+      short: "people"
       
       
       

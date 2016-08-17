@@ -48,6 +48,11 @@
     <script type="text/javascript">
 
       $(function() {
+        // active navbar section
+        var $activeSection = $("#menu-{{ page.short }}");
+        $activeSection.addClass('active');
+        
+        // sidenav
         var $section = $('section');
         var $h2 = $('h2');
         var $sideNav = $('.tc-sidenav ul');
