@@ -48,7 +48,7 @@ defaults:
       menu: "Master's"
   -
     scope:
-      path: "doctorate"
+      path: "phd"
     values:
       section: "Technical Communication and Rhetoric Doctoral Program"
       short: "TCR Doctoral Program"
