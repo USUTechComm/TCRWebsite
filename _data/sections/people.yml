@@ -1,10 +1,10 @@
-- title: People
-  short: People
-  menu: People
-  pages:
-    - name: faculty
-      title: Faculty
-      url: /people/faculty
-    - name: students
-      title: Students
-      url: /people/students
+name: people
+title: People
+short: People
+pages:
+  - name: faculty
+    title: Faculty
+    url: /people/faculty
+  - name: students
+    title: Students
+    url: /people/students
