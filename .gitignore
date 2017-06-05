@@ -2,3 +2,7 @@
 .jekyll-metadata
 .DS_Store
 *.xml
+
+Gemfile.lock
+
+Gemfile

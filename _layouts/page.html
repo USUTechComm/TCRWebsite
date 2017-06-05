@@ -15,15 +15,13 @@
 
           <article class="col-xs-12 col-sm-9" style="margin-top:24px;">
 
-            <div class="col-xs-12">
-
-              <div class="page-header">
-                <h1><small>{{ page.sectionShort }}</small><br>{{ page.title }}</h1>
-              </div>
-
+            <div class="page-header">
+              <h1><small>{{ page.sectionShort }}</small><br>{{ page.title }}</h1>
             </div>
 
-            {{ content }}
+            <div class="row">
+              {{ content }}
+            </div>
 
           </article>
 
@@ -51,7 +49,7 @@
         // active navbar section
         var $activeSection = $("#menu-{{ page.short }}");
         $activeSection.addClass('active');
-        
+
         // sidenav
         var $section = $('section');
         var $h2 = $('h2');
