@@ -6133,6 +6133,9 @@ section h2 {
   border-bottom: solid 1px #eaedee;
   font-size: 34px; }
 
+.section-faculty {
+  padding-top: 36px; }
+
 .section-faculty, .section-students {
   margin-bottom: 60px; }
   .section-faculty h2, .section-students h2 {
